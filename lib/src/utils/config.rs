@@ -210,14 +210,9 @@ impl PlayoutConfig {
             .join(".ffp_status")
             .display()
             .to_string();
-        let bitrate = format!(
-            "{}k",
-            6000
-        );
-        let buf_size = format!(
-            "{}k",
-            3000
-        );
+        
+        let bitrate = format!("{}k", 6000);
+        let buf_size = format!("{}k", 3000);
 
         config.playlist.start_sec = Some(time_to_sec(&config.playlist.day_start));
 
