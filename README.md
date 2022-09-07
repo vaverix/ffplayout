@@ -3,6 +3,12 @@
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
+## Forked from [ffplayout/ffplayout](https://github.com/ffplayout/ffplayout)
+
+Great tool btw, but transcoding bitrates are bit ridiculous so I had to tune them down. What is the point of transcoding video on a bitrate like 600k just to scale it down and encode with 6k bitrate later. 
+
+Currently, I've set them up for Twitch (up to 6k bitrate)
+
 ## **ffplayout-engine (ffplayout)**
 
 [ffplayout](/ffplayout-engine/README.md) is a 24/7 broadcasting solution. It can playout a folder with containing video clips, or play for every day a *JSON* playlist, while keeping the current playlist editable.
