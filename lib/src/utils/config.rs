@@ -212,11 +212,11 @@ impl PlayoutConfig {
             .to_string();
         let bitrate = format!(
             "{}k",
-            config.processing.width * config.processing.height / 10
+            6000
         );
         let buf_size = format!(
             "{}k",
-            (config.processing.width * config.processing.height / 10) / 2
+            3000
         );
 
         config.playlist.start_sec = Some(time_to_sec(&config.playlist.day_start));
