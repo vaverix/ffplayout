@@ -14,3 +14,7 @@ jobs:
       - run: cargo test --all-features
       - run: cargo clippy --all-features --all-targets -- --deny warnings
       - run: cargo build --all-features
+      - uses: actions/upload-artifact@v3
+        with:
+          name: release-${{ matrix.os }}
+          path: target/release/ff*
